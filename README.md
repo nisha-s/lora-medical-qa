@@ -66,7 +66,7 @@ The table compares pretrained performance with LoRA fine-tuning at rank 64, lear
 ### Main findings
 
 - Both models improved on the medical evaluation examples after fine-tuning.
-- GPT-2's medical scores improved across the tested ranks. Increasing epochs also improved medical scores while reducing general semantic similarity.
+- GPT-2’s medical scores improved with more training epochs, while general semantic similarity was lower at 5 epochs than at 1 epoch.
 - TinyLlama achieved its highest medical semantic score at rank 64, learning rate 3e-4 and 3 epochs.
 - TinyLlama's rank-128 run had slightly lower medical semantic similarity than rank 64, but higher medical ROUGE-L and general-task scores.
 - General-task performance did not decline consistently across all settings. The results show that the adaptation–retention trade-off depends on the configuration and evaluation metric.
